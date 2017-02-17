@@ -1,17 +1,20 @@
 language: objective-c
 osx_image: xcode7.3
+xcode_project:travis-ci-practice.xcodeproj
+xcode_scheme:travis_ci_practice
+xcode_sdk: iphonesimulator9.3
 
 before_install:
     - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
     - xcpretty --version
 
-script:
-    - xcodebuild -project travis-ci-practice.xcodeproj -scheme travis-ci-practice -destination 'platform=iOS Simulator,name=iPhone 6' clean build | xcpretty
-    - xctool -project travis-ci-practice.xcodeproj -scheme travis-ci-practice run-tests -sdk iphonesimulator
+# script:
+   #  - xcodebuild -project travis-ci-practice.xcodeproj -scheme travis-ci-practice -destination 'platform=iOS Simulator,name=iPhone 6' clean build | xcpretty
+    # - xctool -project travis-ci-practice.xcodeproj -scheme travis-ci-practice run-tests -sdk iphonesimulator
 
 notifications:
     email:
       recipients:
         - nickDevUic@gmail.com
       on_success: always
-      on_failure: always
+      n_failure: always
