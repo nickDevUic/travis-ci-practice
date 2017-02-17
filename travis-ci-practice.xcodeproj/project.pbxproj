@@ -14,6 +14,9 @@
 		377466E31E5457AE0050425C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377466E21E5457AE0050425C /* Assets.xcassets */; };
 		377466E61E5457AE0050425C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377466E41E5457AE0050425C /* LaunchScreen.storyboard */; };
 		377466F11E5457AE0050425C /* travis_ci_practiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 377466F01E5457AE0050425C /* travis_ci_practiceTests.m */; };
+		3774D7971E569D16001F353A /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3774D7961E569D15001F353A /* Animal.m */; };
+		3774D79B1E56A034001F353A /* Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3774D79A1E56A034001F353A /* Lion.m */; };
+		3774D79E1E56A04E001F353A /* Tiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3774D79D1E56A04E001F353A /* Tiger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		377466EC1E5457AE0050425C /* travis-ci-practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "travis-ci-practiceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		377466F01E5457AE0050425C /* travis_ci_practiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = travis_ci_practiceTests.m; sourceTree = "<group>"; };
 		377466F21E5457AE0050425C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3774D7951E569D15001F353A /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		3774D7961E569D15001F353A /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		3774D7991E56A034001F353A /* Lion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lion.h; sourceTree = "<group>"; };
+		3774D79A1E56A034001F353A /* Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lion.m; sourceTree = "<group>"; };
+		3774D79C1E56A04E001F353A /* Tiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiger.h; sourceTree = "<group>"; };
+		3774D79D1E56A04E001F353A /* Tiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		377466D51E5457AE0050425C /* travis-ci-practice */ = {
 			isa = PBXGroup;
 			children = (
+				3774D7981E56A007001F353A /* Model */,
 				377466D91E5457AE0050425C /* AppDelegate.h */,
 				377466DA1E5457AE0050425C /* AppDelegate.m */,
 				377466DC1E5457AE0050425C /* ViewController.h */,
@@ -109,6 +119,19 @@
 				377466F21E5457AE0050425C /* Info.plist */,
 			);
 			path = "travis-ci-practiceTests";
+			sourceTree = "<group>";
+		};
+		3774D7981E56A007001F353A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3774D7951E569D15001F353A /* Animal.h */,
+				3774D7961E569D15001F353A /* Animal.m */,
+				3774D7991E56A034001F353A /* Lion.h */,
+				3774D79A1E56A034001F353A /* Lion.m */,
+				3774D79C1E56A04E001F353A /* Tiger.h */,
+				3774D79D1E56A04E001F353A /* Tiger.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3774D79B1E56A034001F353A /* Lion.m in Sources */,
 				377466DE1E5457AE0050425C /* ViewController.m in Sources */,
+				3774D7971E569D16001F353A /* Animal.m in Sources */,
+				3774D79E1E56A04E001F353A /* Tiger.m in Sources */,
 				377466DB1E5457AE0050425C /* AppDelegate.m in Sources */,
 				377466D81E5457AE0050425C /* main.m in Sources */,
 			);
@@ -402,6 +428,7 @@
 				377466F71E5457AE0050425C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		377466F81E5457AE0050425C /* Build configuration list for PBXNativeTarget "travis-ci-practiceTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +437,7 @@
 				377466FA1E5457AE0050425C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
