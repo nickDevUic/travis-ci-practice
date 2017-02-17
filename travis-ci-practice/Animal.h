@@ -15,7 +15,12 @@
 @property (assign, nonatomic) NSInteger speed;
 @property (assign, nonatomic) NSInteger energy;
 @property (assign, nonatomic) NSInteger distance;
-- (instancetype)initWithName:(NSString *)name feet:(NSInteger)feet speed:(NSInteger)speed energy:(NSInteger)energy;
+@property (assign, nonatomic) NSInteger blood;
+@property (assign, nonatomic) NSInteger attack;
+@property (assign, nonatomic) NSInteger defense;
+
+- (instancetype)initWithName:(NSString *)name feet:(NSInteger)feet speed:(NSInteger)speed energy:(NSInteger)energy blood:(NSInteger)blood attack:(NSInteger)attack defense:(NSInteger)defense;
 - (NSInteger)run;
+- (NSInteger)attackedBy:(Animal *)animal;
 
 @end
