@@ -8,9 +8,10 @@ before_install:
     - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
     - xcpretty --version
 
-# script:
-   #  - xcodebuild -project travis-ci-practice.xcodeproj -scheme travis-ci-practice -destination 'platform=iOS Simulator,name=iPhone 6' clean build | xcpretty
+script:
+    - xcodebuild -project travis-ci-practice.xcodeproj -scheme travis-ci-practice -destination 'platform=iOS Simulator,name=iPhone 6' clean build | xcpretty
     # - xctool -project travis-ci-practice.xcodeproj -scheme travis-ci-practice run-tests -sdk iphonesimulator
+    - xcodebuild test -project travis-ci-practice.xcodeproj -scheme 'travis-ci-practice' -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest' -configuration Debug | xcpretty -c
 
 notifications:
     email:
