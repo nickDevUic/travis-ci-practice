@@ -7,7 +7,7 @@ before_install:
 
 script:
     - xcodebuild -project travis-ci-practice.xcodeproj -scheme travis-ci-practice -destination 'platform=iOS Simulator,name=iPhone 6' clean build | xcpretty
-    - xctool -project travis-ci-practice.xcodeproj -scheme travis-ci-practice run-tests  -test-sdk iphonesimulator
+    - xctool -project travis-ci-practice.xcodeproj -scheme travis-ci-practice run-tests -sdk iphonesimulator
 
 notifications:
     email:
