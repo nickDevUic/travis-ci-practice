@@ -1,15 +1,13 @@
 //
-//  Lion.m
+//  Rhinoceros.h
 //  travis-ci-practice
 //
 //  Created by Nick Huang on 2017/2/17.
 //  Copyright © 2017年 nick. All rights reserved.
 //
 
-#import "Lion.h"
+#import "Animal.h"
 
-@implementation Lion
-
-
+@interface Rhinoceros : Animal
 
 @end

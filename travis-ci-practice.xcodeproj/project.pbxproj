@@ -17,6 +17,7 @@
 		3774D7971E569D16001F353A /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3774D7961E569D15001F353A /* Animal.m */; };
 		3774D79B1E56A034001F353A /* Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3774D79A1E56A034001F353A /* Lion.m */; };
 		3774D79E1E56A04E001F353A /* Tiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3774D79D1E56A04E001F353A /* Tiger.m */; };
+		3774D7A11E56D8DB001F353A /* Rhinoceros.m in Sources */ = {isa = PBXBuildFile; fileRef = 3774D7A01E56D8DB001F353A /* Rhinoceros.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		3774D79A1E56A034001F353A /* Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lion.m; sourceTree = "<group>"; };
 		3774D79C1E56A04E001F353A /* Tiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiger.h; sourceTree = "<group>"; };
 		3774D79D1E56A04E001F353A /* Tiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiger.m; sourceTree = "<group>"; };
+		3774D79F1E56D8DB001F353A /* Rhinoceros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rhinoceros.h; sourceTree = "<group>"; };
+		3774D7A01E56D8DB001F353A /* Rhinoceros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rhinoceros.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				3774D79A1E56A034001F353A /* Lion.m */,
 				3774D79C1E56A04E001F353A /* Tiger.h */,
 				3774D79D1E56A04E001F353A /* Tiger.m */,
+				3774D79F1E56D8DB001F353A /* Rhinoceros.h */,
+				3774D7A01E56D8DB001F353A /* Rhinoceros.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3774D79B1E56A034001F353A /* Lion.m in Sources */,
+				3774D7A11E56D8DB001F353A /* Rhinoceros.m in Sources */,
 				377466DE1E5457AE0050425C /* ViewController.m in Sources */,
 				3774D7971E569D16001F353A /* Animal.m in Sources */,
 				3774D79E1E56A04E001F353A /* Tiger.m in Sources */,
@@ -367,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "travis-ci-practice/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -379,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "travis-ci-practice/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
