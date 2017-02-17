@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Lion.h"
+#import "Tiger.h"
 
 @interface travis_ci_practiceTests : XCTestCase
 
@@ -34,6 +36,18 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+- (void)testAnimalSpeed {
+    
+    Lion *lionX = [[Lion alloc] initWithName:@"Leo" feet:4 speed:35 energy:5];
+    Tiger *tigerX = [[Tiger alloc] initWithName:@"Teddy" feet:4 speed:30 energy:6];
+    
+    NSInteger lionXRunDistance = [lionX run];
+    NSInteger tigerXRunDistance = [tigerX run];
+    
+    XCTAssert(lionXRunDistance < tigerXRunDistance, "lion is not fast than tiger");
+    
 }
 
 @end
